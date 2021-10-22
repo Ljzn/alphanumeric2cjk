@@ -7,8 +7,19 @@ defmodule Alphanumeric2cjk.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: "Compress alphanumeric string to cjk characters.",
+      package: package()
     ]
+  end
+
+  defp package do
+    %{
+      licenses: ["Apache-2.0"],
+      links: %{
+        "GitHub" => "https://github.com/Ljzn/alphanumeric2cjk"
+      }
+    }
   end
 
   # Run "mix help compile.app" to learn about applications.
